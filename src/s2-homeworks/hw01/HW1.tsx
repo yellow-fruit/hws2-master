@@ -13,12 +13,24 @@ import avatar from './avatar.png'
 * 5 - сделать стили в соответствии с дизайномK
 * */
 
-// нужно создать правильный тип вместо any
-export type MessageType = any
+export  type UserType = {
+    avatar : string
+    name: string
+}// нужно создать правильный тип вместо any
+
+
+export type MessageType = {
+    id: number
+    user:UserType
+    message:{
+        text:string
+        time: string
+    }
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
-    id: 0,
+    id: 10,
     user: {
         avatar: avatar, // можно менять
         name: 'Some Name',  // можно менять
