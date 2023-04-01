@@ -1,6 +1,5 @@
 .message {
 
-
 }
 
 .imageAndText {
@@ -9,10 +8,14 @@
 
 .imageAndText img {
 
+
 }
 
 .text {
 
+
+
+    color: black;
 }
 
 .text:after {
