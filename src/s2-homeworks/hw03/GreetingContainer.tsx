@@ -10,19 +10,20 @@ type GreetingContainerPropsType = {
 
 export const pureAddUser = (name: string, setError: (value: string) => void, setName: (value: string) => void, addUserCallback: (name: string) => void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-    if (name.trim() !== '') {
-        addUserCallback(name)
-    } else {
-        setError('warning')
-    }
-    setName('')
 
-    console.log('zxcv')
+    if (name.trim() == '') {
+        setError('Ошибка! Введите имя!')
+    } else {
+        addUserCallback(name)
+    }
+    setName('  ')
+
+    console.log(name)
 }
 
 export const pureOnBlur = (name: string, setError: (value: string) => void) => { // если имя пустое - показать ошибку
     if (name.trim() === '') {
-        setError('warning')
+        setError('Ошибка! Введите имя!')
     }
 }
 
