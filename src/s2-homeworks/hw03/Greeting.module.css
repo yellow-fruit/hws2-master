@@ -9,13 +9,14 @@
 }
 
 .input {
+    color: #cc0000;
 }
 
 .input:focus {
 }
 
 .errorInput {
-color: #cc0000;
+
 }
 
 .button {
