@@ -2,6 +2,7 @@
 }
 
 .sidebar.open {
+    opacity: 0.4;
 }
 
 .background {
